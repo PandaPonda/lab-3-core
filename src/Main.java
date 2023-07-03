@@ -18,7 +18,7 @@ public class Main {
                 System.out.println(calculation(firstNumber, secondNumber, operation));
             }
             catch (InputMismatchException ex) {
-                if (!"q".equals(operation)) break;
+                if ("q".equals(operation)) break;
                 System.out.println("Wrong input data!");
                 scanner.skip(".*\n");
 
